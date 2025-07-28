@@ -14,12 +14,6 @@ This project demonstrates a fullstack application using a React frontend and a L
 - 📄 Generates answers with citations from gathered sources.
 - 🔄 Hot-reloading for both frontend and backend during development.
 
-## Project Structure
-
-The project is divided into two main directories:
-
--   `frontend/`: Contains the React application built with Vite.
--   `backend/`: Contains the LangGraph/FastAPI application, including the research agent logic.
 
 ## Getting Started: Development and Local Testing
 

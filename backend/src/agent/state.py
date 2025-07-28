@@ -11,7 +11,7 @@ import operator
 
 
 class OverallState(TypedDict):
-    messages: Annotated[list, add_messages]
+    messages: Annotated[list, add_messages] # Annotated[T, *metadata] 表示一个类型为T的值，后面跟着一个或多个元数据
     search_query: Annotated[list, operator.add]
     web_research_result: Annotated[list, operator.add]
     sources_gathered: Annotated[list, operator.add]

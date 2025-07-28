@@ -39,7 +39,7 @@ class Configuration(BaseModel):
         metadata={"description": "The maximum number of research loops to perform."},
     )
 
-    @classmethod
+    @classmethod # 类方法，从RunnableConfig创建Configuration实例
     def from_runnable_config(
         cls, config: Optional[RunnableConfig] = None
     ) -> "Configuration":
@@ -56,5 +56,5 @@ class Configuration(BaseModel):
 
         # Filter out None values
         values = {k: v for k, v in raw_values.items() if v is not None}
-
+        # cls(**values) 相当于 Configuration(**values)，创建Configuration实例
         return cls(**values)
